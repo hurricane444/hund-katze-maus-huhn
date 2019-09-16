@@ -18,7 +18,6 @@ body{
 }
 
 
-
 img{
 	width: 100%;
 }
@@ -44,10 +43,29 @@ img{
 	width: 25%;
 	float: left;
 	padding: 10px;
+	position: relative;
 }
 
 .clear::after{
 	content: "";
 	display: block;
 	clear: both;
+}
+
+.float p{
+	position: absolute;
+	bottom: 10px;
+	left:10px;
+	background: white;
+	padding: 10px;
+	width: 180px;
+}
+
+.hinweis{
+
+display: none;
+}
+
+a:hover .hinweis{
+display: block; 
 }
